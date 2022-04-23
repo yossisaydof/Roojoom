@@ -50,5 +50,4 @@ def get_response_status(created_problem):
                 check_indicator([status_indicator1, status_indicator2], "off"):
             return "ALL is ok"
 
-    else:
-        return "Unknown device"
+    return "Unknown device"
