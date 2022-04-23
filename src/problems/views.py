@@ -1,6 +1,6 @@
 from django.shortcuts import render
 
-from server import get_response_status
+from ..server import get_response_status
 from .forms import ProblemForm
 
 
