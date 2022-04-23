@@ -1,0 +1,11 @@
+<h1>Report a problem</h1>
+
+<h2>{{ response_status }}</h2>
+
+<form action="{% url 'report' %}" method="post">
+    {% csrf_token %}
+    <table>
+        {{ problem_form.as_table }}
+    </table>
+    <input type="submit" value="Report">
+</form>
